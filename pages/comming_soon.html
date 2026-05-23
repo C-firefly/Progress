@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coming Soon</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    font-family:monospace;
+    color:#00c3ff;
+    text-align:center;
+
+    background:url('images/background: /background.jpg') no-repeat center center fixed;
+    background-size:cover;
+
+    position:relative;
+}
+
+/* Dark Overlay */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.78);
+    z-index:-1;
+}
+
+/* Main Content */
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Message Box */
+.box{
+    border:1px solid #00c3ff;
+    padding:35px 25px;
+    border-radius:15px;
+    background:rgba(0,0,0,0.55);
+    box-shadow:0 0 15px rgba(0,195,255,0.25);
+    max-width:500px;
+    width:90%;
+}
+
+.box h1{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.box p{
+    color:#bdefff;
+    font-size:15px;
+    line-height:1.7;
+}
+
+/* Back Button */
+.btn{
+    display:inline-block;
+    margin-top:22px;
+    padding:10px 18px;
+    border:1px solid #00c3ff;
+    border-radius:8px;
+    color:#00c3ff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00c3ff;
+    color:black;
+}
+
+/* Footer */
+footer{
+    width:100%;
+    text-align:center;
+    padding:18px;
+    border-top:1px solid #00c3ff;
+    background:rgba(0,0,0,0.75);
+    color:#8edfff;
+    font-size:14px;
+}
+
+/* Mobile Responsive */
+@media (max-width:600px){
+
+    .box{
+        padding:28px 18px;
+    }
+
+    .box h1{
+        font-size:24px;
+    }
+
+    .box p{
+        font-size:14px;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+    <div class="box">
+        <h1>⚠️ Coming Soon</h1>
+
+        <p>
+            This page is not ready yet.
+            <br>
+            More updates will be added soon.
+        </p>
+
+        <a href="index.html" class="btn">
+            ← Back
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    C-Firefly ©2026
+</footer>
+
+</body>
+  </html>
